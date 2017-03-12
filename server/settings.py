@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mongoengine',
     'rest_framework',
+    'rest_framework_mongoengine',
     'cars4share',
 ]
 
