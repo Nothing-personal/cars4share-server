@@ -8,3 +8,4 @@ Prerequisites:
 * pip install Django (version 1.10.6)
 * pip install djangorestframework (version 3.6.2)
 * pip install django-rest-framework-mongoengine (version 3.3.1)
+* pip install mongoengine (version 0.11.0, pymongo also will be installed)
