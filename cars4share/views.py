@@ -9,6 +9,7 @@ def index(request):
     return HttpResponse("Hello! You are at Cars4Share index page!")
 
 
+# API view for User
 class UserViewSet(viewsets.ModelViewSet):
     lookup_field = 'id'
     serializer_class = UserSerializer
