@@ -1,6 +1,5 @@
 # cars4share-server
-Server, which provides Cars4Share API
-This project is using Python 3.5
+Server, which provides Cars4Share API. This project is based on Python 3.5
 
 ## Prerequisites:
 * sudo apt-get install python3-pip
