@@ -4,8 +4,10 @@ from cars4share.models import Feedback
 
 # Create your tests here.
 class FeedbackTestCase(TestCase):
-    def set_up(self):
-        feedback = Feedback.objects.create(
-            message="Test feedback",
-            rating=5
+
+    @staticmethod
+    def set_up():
+        Feedback.objects.create(
+            message='test',
+            rate=5
         )
