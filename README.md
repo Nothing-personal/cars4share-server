@@ -10,7 +10,7 @@ Server, which provides Cars4Share API. This project is based on Python 3.5
 * pip install markdown       # Markdown support for the browsable API.
 * pip install django-filter  # Filtering support
 
-## API execution examples using curl:
+## API utilization examples using curl:
 * GET request to API list: 
   * curl \<host>/api/
 * GET request to users list:
