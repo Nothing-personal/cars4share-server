@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from rest_framework_mongoengine import viewsets
+from rest_framework import viewsets
 from cars4share.models import User
 from cars4share.serializers import UserSerializer
 
@@ -14,5 +14,4 @@ class UserViewSet(viewsets.ModelViewSet):
     lookup_field = 'id'
     serializer_class = UserSerializer
 
-    def get_queryset(self):
-        return User.objects.all()
+    queryset = User.objects.all()
