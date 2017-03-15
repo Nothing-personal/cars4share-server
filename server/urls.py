@@ -23,7 +23,7 @@ from cars4share import views
 router = routers.DefaultRouter()
 
 # register REST API endpoints with DRF router
-router.register(r'user', views.UserViewSet, r"user")
+router.register(r'users', views.UserViewSet, r"users")
 
 urlpatterns = [
     # default admin interface
