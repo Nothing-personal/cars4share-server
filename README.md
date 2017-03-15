@@ -11,7 +11,11 @@ Server, which provides Cars4Share API. This project is based on Python 3.5
 * pip install django-filter  # Filtering support
 
 ## API execution examples using curl:
-* GET request to API list: curl \<host>/api/
-* GET request to users list: curl \<host>/api/users/
-* GET requset to user details: curl \<host>/api/users/{id}/; where id is 24-symbols hex number
-* POST request to add User: curl --data 'your data here' \<host>/api/users/
+* GET request to API list: 
+  * curl \<host>/api/
+* GET request to users list:
+  * curl \<host>/api/users/
+* GET requset to user details: 
+  * curl \<host>/api/users/{id}/; where id is 24-symbols hex number
+* POST request to add User: 
+  * curl --data 'your data here' \<host>/api/users/
