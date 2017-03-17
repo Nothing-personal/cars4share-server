@@ -25,6 +25,7 @@ router = routers.DefaultRouter()
 # register REST API endpoints with DRF router
 router.register(r'users', views.UserViewSet, r"users")
 
+
 urlpatterns = [
     # default admin interface
     url(r'^admin/', admin.site.urls),

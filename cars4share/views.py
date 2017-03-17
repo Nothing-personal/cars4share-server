@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from rest_framework import viewsets
-from cars4share.models import User
-from cars4share.serializers import UserSerializer
+from cars4share import models
+from cars4share import serializers
 
 
 # Create your views here.
@@ -12,6 +12,7 @@ def index(request):
 # API view for User
 class UserViewSet(viewsets.ModelViewSet):
     lookup_field = 'id'
-    serializer_class = UserSerializer
+    serializer_class = serializers.UserSerializer
 
-    queryset = User.objects.all()
+    queryset = models.User.objects.all()
+

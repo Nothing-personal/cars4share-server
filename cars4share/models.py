@@ -28,13 +28,6 @@ class Document(models.Model):
     )
 
 
-class CreditCard(models.Model):
-    card_number = models.CharField(max_length=16)
-    cardholder_name = models.CharField(max_length=30)
-    cvv_code = models.CharField(max_length=3)
-    due_date = models.DateField('due date')
-
-
 class Feedback(models.Model):
     message = models.CharField(max_length=200, blank=True)
     rate = models.IntegerField()
@@ -67,9 +60,8 @@ class User(models.Model):
         default=MALE,
     )
     is_verified = models.BooleanField(default=False)
-    passport = models.OneToOneField('Document', related_name='passport', blank=True)
-    driver_license = models.OneToOneField('Document', related_name='driver_license', blank=True)
-    credit_card = models.ForeignKey(CreditCard, blank=True)  # need to think about should we store this data or not
+    passport = models.OneToOneField('Document', related_name='passport', null=True)
+    driver_license = models.OneToOneField('Document', related_name='driver_license', null=True)
     feedback = models.ManyToManyField(Feedback, blank=True)
     account_type = models.CharField(
         max_length=2,
